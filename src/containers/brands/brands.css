@@ -1,0 +1,24 @@
+.homyz-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+.homyz-brands div {
+  max-width: 150px;
+  min-width: 120px;
+  margin-inline: auto;
+}
+.homyz-brands div img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  .homyz-brands {
+    flex-direction: column;
+  }
+  .homyz-brands div {
+    width: 100px;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}

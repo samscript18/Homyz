@@ -1,0 +1,95 @@
+.contact {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  transition: all 300ms ease-in;
+}
+.contact:hover {
+  scale: 1.023;
+  box-shadow: var(--shadow);
+}
+.contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.contact .contact-content svg {
+  fill: var(--blue);
+}
+.contact .contact-content span {
+  background-color: var(--lightBlue);
+  padding: 0.4rem 0.55rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+.contact-content .contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-content .contact-title h5 {
+  color: var(--primary);
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.contact-content .contact-title p {
+  font-size: 15px;
+  line-height: 22px;
+}
+.contact > :last-child {
+  width: 100%;
+  background-color: var(--lightBlue);
+  color: var(--blue);
+  padding-block: 0.5rem;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  transition: all 300ms ease-in;
+}
+.contact > :last-child:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .contact {
+    width: 13rem;
+    padding: 0.85rem 1rem;
+  }
+  .contact-content .contact-title h5 {
+    color: var(--primary);
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact-content .contact-title p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .contact > :last-child {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contact {
+    width: 18rem;
+    padding: 0.85rem 1rem;
+  }
+  .contact-content .contact-title h5 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .contact > :last-child {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

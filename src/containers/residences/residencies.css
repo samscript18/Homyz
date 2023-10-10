@@ -1,0 +1,73 @@
+.homyz-residencies {
+  padding: 2.5rem 3.5rem;
+}
+.homyz-residencies-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.homyz-residencies .homyz-residencies-heading {
+  margin-bottom: 3.5rem;
+}
+.homyz-residencies-heading h3 {
+  font-size: 26px;
+  line-height: 35px;
+  font-weight: 800;
+}
+.homyz-residencies-heading h5 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 800;
+}
+.homyz-residencies .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.swiper-horizontal {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 850px) {
+  .homyz-residencies {
+    padding: 2.5rem 2rem;
+  }
+  .homyz-residencies-heading h3 {
+    font-size: 19px;
+    line-height: 32px;
+  }
+  .homyz-residencies-heading h5 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homyz-residencies {
+    padding: 2.5rem 1rem;
+  }
+  .homyz-residencies-container {
+    overflow: visible;
+  }
+  .homyz-residencies-heading {
+    text-align: center;
+  }
+  .homyz-residencies-heading h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .homyz-residencies-heading h5 {
+    font-size: 19px;
+    line-height: 29px;
+  }
+  .homyz-residencies .swiper-wrapper > :first-child {
+    margin-left: -1.5rem;
+  }
+  .homyz-residencies .swiper-wrapper > :nth-child(2),
+  .swiper-wrapper > :nth-child(3),
+  .swiper-wrapper > :nth-child(4),
+  .swiper-wrapper > :nth-child(5),
+  .swiper-wrapper > :nth-child(6) {
+    margin-left: 2.2rem;
+  }
+}

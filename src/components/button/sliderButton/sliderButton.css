@@ -1,0 +1,44 @@
+.slideButtons {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+}
+.slideButtons button {
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.65rem;
+  color: var(--blue);
+  border: none;
+  border-radius: 5px;
+}
+.slideButtons > :first-child {
+  background-color: var(--lightBlue);
+  margin-right: 1rem;
+}
+.slideButtons > :last-child {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 850px) {
+  .slideButtons button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .slideButtons > :first-child {
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slideButtons {
+    top: 96%;
+    left: 35%;
+  }
+  .slideButtons button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

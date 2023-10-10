@@ -1,0 +1,138 @@
+.homyz-values {
+  padding: 2rem 3.5rem;
+  margin-block: 4rem;
+}
+.homyz-values .homyz-values-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.homyz-values .homyz-values-container .homyz-values-img {
+  width: 25rem;
+  /* height: 28rem; */
+  background-color: rgba(245, 245, 245, 1);
+  border-radius: 15rem 15rem 0 0;
+  border: none;
+  padding: 6px;
+  margin-right: 5rem;
+}
+.homyz-values-container .homyz-values-img img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 15rem 15rem 0 0;
+}
+.homyz-values-container .homyz-values-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homyz-values-content .heading {
+  margin-bottom: 2rem;
+}
+.homyz-values-content .heading > :nth-child(2) {
+  margin-block: 0.75rem;
+}
+.homyz-values-content .accordion-container {
+  width: 100%;
+}
+.accordion {
+  width: 100%;
+  height: 100%;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+.accordion .accordion-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion .accordion-heading h6 {
+  font-size: 16px;
+  line-height: 26px;
+}
+.accordion .accordion-heading svg {
+  fill: var(--blue);
+  display: flex;
+  align-items: center;
+}
+.accordion .accordion-heading > :first-child {
+  padding: 0.4rem 0.5rem;
+  background-color: var(--lightBlue);
+  border-radius: 5px;
+}
+.accordion .accordion-heading > :last-child {
+  padding: 0.2rem 0.3rem;
+  background-color: var(--lightBlue);
+  border-radius: 5px;
+  border: none;
+}
+.accordion .accordion-content {
+  height: auto;
+  transition: all 1s cubic-bezier(1, 0, 1, 0);
+}
+
+.accordion .accordion-content p {
+  padding-top: 1.5rem;
+  font-size: 13px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 850px) {
+  .homyz-values {
+    padding: 2rem 2rem;
+  }
+  .homyz-values .homyz-values-container .homyz-values-img {
+    margin: 0 0 2.5rem 0;
+  }
+  .homyz-values .homyz-values-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .homyz-values-container .homyz-values-content {
+    max-width: 100%;
+  }
+  .accordion {
+    padding: 0.85rem 1rem;
+  }
+  .accordion .accordion-heading h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homyz-values {
+    padding: 0.5rem 1rem;
+  }
+  .homyz-values-container .homyz-values-img {
+    max-width: 100%;
+  }
+  .accordion {
+    padding: 0.6rem 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .accordion .accordion-heading h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .accordion .accordion-heading > :first-child {
+    margin-right: 0.4rem;
+    padding: 0.3rem 0.4rem;
+  }
+  .accordion .accordion-heading > :last-child {
+    padding: 0.1rem 0.2rem;
+  }
+  .accordion .accordion-content p {
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,85 @@
+.homyz-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0.6rem 3.5rem;
+}
+.homyz-navbar .homyz-nav-logo {
+  width: 120px;
+  height: 58px;
+}
+.homyz-navbar .homyz-nav-logo img {
+  width: 100%;
+}
+.homyz-navbar .homyz-navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homyz-navbar .homyz-navbar-links a {
+  margin-right: 2.5rem;
+  font-size: 18px;
+  line-height: 13px;
+  color: var(--secondary);
+}
+.homyz-navbar .navbar-menu {
+  display: none;
+  position: relative;
+}
+.homyz-navbar .navbar-menu .navbar-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: end;
+  background: #fff;
+  color: var(--black);
+  padding: 1rem 1.8rem;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  font-size: 14px;
+  min-width: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.homyz-navbar .navbar-menu .navbar-links a {
+  padding-block: 0.2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .homyz-navbar {
+    padding: 0.6rem 2rem;
+  }
+  .homyz-navbar .homyz-navbar-links a {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homyz-navbar {
+    padding: 0.6rem 1rem;
+  }
+  .homyz-navbar .homyz-nav-logo {
+    width: 90px;
+    height: 39px;
+  }
+  .homyz-navbar .homyz-navbar-links {
+    display: none;
+  }
+  .homyz-navbar .navbar-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .homyz-navbar .navbar-menu .navbar-links a {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,72 @@
+.homyz-cta {
+  padding: 1.5rem 3.5rem 3.5rem;
+}
+.homyz-cta .homyz-cta-container {
+  width: 100%;
+  padding: 2.5rem 2rem 1.8rem;
+  background: var(--blue-gradient);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homyz-cta-container h2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-size: 800;
+  color: #fff;
+}
+.homyz-cta-container p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--secondary);
+  margin-block: 1rem 0.85rem;
+  text-align: center;
+}
+.homyz-cta-container > :last-child {
+  background-color: #5a73d7;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 550;
+  transition: all 300ms ease-in;
+}
+.homyz-cta-container > :last-child:hover {
+  scale: 1.0323;
+  outline: none;
+}
+
+@media screen and (max-width: 850px) {
+  .homyz-cta {
+    padding: 1.5rem 2rem;
+  }
+  .homyz-cta-container h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homyz-cta {
+    padding: 1.5rem 1rem;
+  }
+  .homyz-cta .homyz-cta-container {
+    padding: 1.6rem 1.5rem 1.3rem;
+  }
+  .homyz-cta-container h2 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .homyz-cta-container p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .homyz-cta-container > :last-child {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
